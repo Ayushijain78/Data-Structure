@@ -10,3 +10,8 @@ console.log(majorityElement([3,2,3]))
 
 //O(n log n) dure to sorting operation
 //o(1)
+
+
+// DRY RUN
+// sort => [1,1,1,2,2,2,2]
+// nums[3]
