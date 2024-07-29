@@ -21,7 +21,7 @@ function printStar1(n) {
 // * * * * *
 // * * * * * *
 // * * * * * * *
-// * * * * * * * *
+// * * * * * * * * 
 function printStar2(n) {
   let mydiv = document.getElementById("star");
   mydiv.innerHTML = ""; // Clear any existing content

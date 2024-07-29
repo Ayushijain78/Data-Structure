@@ -21,7 +21,7 @@ var maxProfit = function (prices) {
 let prices1 = [7, 1, 5, 3, 6, 4];
 //TC: O(N^2)
 //SC: O(1)
-console.log(maxProfit(prices1));
+console.log(maxProfit(prices1))
 
 //Optimal
 var maxProfitOptimized = function (prices) {

@@ -1,6 +1,6 @@
 // Remove Element
 // Given an integer array nums and an integer val,
-//  remove all occurrences of val in nums in-place. 
+//  remove all occurrences of val in nums in-place.
 // The order of the elements may be changed.
 //  Then return the number of elements in nums which are not equal to val.
 
@@ -14,18 +14,18 @@
  * @param {number} val
  * @return {number}
  */
-var removeElement = function(nums, val) {
-    if(nums.length===0) return nums;
-    let index=0;
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]!==val){
-            nums[index]=nums[i];
-            index++;
-        }
+var removeElement = function (nums, val) {
+  if (nums.length === 0) return nums;
+  let index = 0;
+  for (let i = 0; i < nums.length; i++) { 
+    if (nums[i] !== val) {
+      nums[index] = nums[i];
+      index++;
     }
-    nums.length=index
-    return {index, nums}
+  }
+  nums.length = index;
+  return { index, nums };
 };
 //TC: O(n)
 //SC: O(1)
-console.log(removeElement([3,2,2,3],3))
+console.log(removeElement([3, 2, 2, 3], 3));

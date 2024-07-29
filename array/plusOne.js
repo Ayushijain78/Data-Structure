@@ -10,23 +10,21 @@
  * @return {number[]}
  */
 var plusOne = function (digits) {
-
-  for (let i = digits.length-1; i >= 0; i--) {
+  for (let i = digits.length - 1; i >= 0; i--) {
     if (digits[i] === 9) {
       digits[i] = 0;
     } else {
-        digits[i]++
-        return digits
-    }
+      digits[i]++;
+      return digits;
+    } 
   }
-  digits.unshift(1)
-  return digits
-//   let num = parseInt(digits.join(''), 10) + 1;
-//   return [...num.toString()].map(Number);
+  digits.unshift(1);
+  return digits;
+  //   let num = parseInt(digits.join(''), 10) + 1;
+  //   return [...num.toString()].map(Number);
 };
 
-console.log(plusOne([9,9,9]))
- 
-  
+console.log(plusOne([9, 9, 9]));
+
 //TC: o(n)
 //Sc: o(n) The space complexity is also O(n) because the function only uses a constant amount of extra space regardless of the size of the input array.

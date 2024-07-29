@@ -15,19 +15,19 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function(nums) {
-    if(nums.length===0) return nums;
-    let index=1;
-    for(let i=1;i<nums.length;i++){
-        if(nums[i]!==nums[i-1]){
-            nums[index]=nums[i];
-            index++
-        }
+var removeDuplicates = function (nums) { 
+  if (nums.length === 0) return nums;
+  let index = 1;
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] !== nums[i - 1]) {
+      nums[index] = nums[i];
+      index++;
     }
-    nums.length=index
-    return {index: index, arr: nums}
+  }
+  nums.length = index;
+  return { index: index, arr: nums };
 };
 
 //TC: o(n)
 //SC: o(1)
-console.log(removeDuplicates([1,2,2,2,2,4,5,6]))
+console.log(removeDuplicates([1, 2, 2, 2, 2, 4, 5, 6]));

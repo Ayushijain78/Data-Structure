@@ -54,7 +54,7 @@ var twoSumOptimized = function (nums, target) {
     }
   }
   return [];
-};
+}; 
 //TC=>o(n)
 //SC=>o(n)
 console.log(twoSumOptimized([2, 7, 11, 15], 9));

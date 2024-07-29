@@ -22,7 +22,7 @@ var searchInsert = function (nums, target) {
     }
   }
   return left;
-};
+}; 
 
 //TC: O(log n)
 //SC: O(1)
